@@ -9,7 +9,7 @@ namespace MVC_CRUD.Models
 {
     public class StudentDB
     {
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-BQJ4FSHQ\\SQLEXPRESS;Initial Catalog=student;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=localhost;Initial Catalog=student;Integrated Security=True");
         public bool AddStudent(Student student)
         {
             SqlCommand cmd = new SqlCommand("sp_students", con);
